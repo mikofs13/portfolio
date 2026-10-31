@@ -1,6 +1,8 @@
 import Image from "next/image";
+import { Fragment } from "react";
 import { Header } from "@/components/header";
 import { Arrow, Asterisk } from "@/components/icons";
+import { ContactForm } from "@/components/contact-form";
 import { CopyEmail } from "@/components/contact";
 import { Project } from "@/components/project";
 
@@ -8,7 +10,7 @@ import { Project } from "@/components/project";
 import { site, projects } from "@/lib/content";
 
 function Lines({ lines }: { lines: string[] }) {
-  return lines.map((line, index) => <span key={index}>{index > 0 && <br/>}{line}</span>);
+  return lines.map((line, index) => <Fragment key={index}>{index > 0 && <br/>}{line}</Fragment>);
 }
 
 export default function Home() {
@@ -39,7 +41,7 @@ export default function Home() {
 
       <section className="tools-section shell section-space" aria-labelledby="tools-heading"><div className="section-heading"><div><p className="eyebrow">04 / THE TOOLKIT</p><h2 id="tools-heading">Tools I work with<span className="accent">.</span></h2></div><p className="section-description">Different tools. One goal:<br/>build something useful.</p></div>{site.skills.map(group => <div className="tool-row" key={group.title}><h3>{group.title}</h3><ul>{group.items.map(item => <li key={item}>{item}</li>)}</ul></div>)}</section>
 
-      <section id="contact" className="contact-section" aria-labelledby="contact-heading"><div className="shell"><p className="eyebrow">GOOD THINGS START WITH A CONVERSATION.</p><a className="contact-title" href={`mailto:${site.email}`}><h2 id="contact-heading"><Lines lines={site.contact.heading}/></h2><Arrow/></a><div className="contact-bottom"><div><a className="email-link" href={`mailto:${site.email}`}>{site.email}</a><CopyEmail email={site.email}/></div><p>{site.contact.description}</p></div></div></section>
+      <section id="contact" className="contact-section" aria-labelledby="contact-heading"><div className="shell"><p className="eyebrow">GOOD THINGS START WITH A CONVERSATION.</p><a className="contact-title" href={`mailto:${site.email}`}><h2 id="contact-heading"><Lines lines={site.contact.heading}/></h2><Arrow/></a><ContactForm/><div className="contact-bottom"><div><a className="email-link" href={`mailto:${site.email}`}>{site.email}</a><CopyEmail email={site.email}/></div><p>{site.contact.description}</p></div></div></section>
     </main>
     <footer className="footer shell"><p>© {new Date().getFullYear()} {site.name}</p><p className="footer-note">{site.footerNote}</p><a href={site.github} target="_blank" rel="noopener noreferrer">GitHub <Arrow/></a><a href="#home">Back to top <span aria-hidden="true">↑</span></a></footer>
   </>;

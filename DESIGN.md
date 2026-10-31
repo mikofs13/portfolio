@@ -16,7 +16,7 @@ Manrope variable font, a firm and precise grotesk chosen after reviewing its Goo
 Restrained color strategy. Warm charcoal oklch(0.2 0.006 115), ivory oklch(0.96 0.012 100), muted stone oklch(0.72 0.012 100), citron oklch(0.91 0.15 113). Max content width 1320px, generous responsive gutters, thin neutral rules, minimal rounded geometry. Large asymmetric project presentations, no repetitive icon-card grid.
 
 ## Interactions
-Anchor navigation, mobile menu with accessible state, inline expandable project notes, email contact and copy-email feedback. Brief opacity/transform entry effects respect reduced motion. No content hidden pending JavaScript.
+Lenis desktop smooth scrolling, mobile menu with accessible state, inline expandable project stories and screenshot galleries, a Resend-backed inquiry form, and copy-email feedback. Scroll-triggered opacity/transform reveals, gentle hero parallax and a reading-progress line respect reduced motion and clean up their listeners. Touch scrolling is native. No content hidden pending JavaScript.
 
 ## Mock fidelity inventory
-Metal ribbon: generated raster asset. Typography, nav, CTAs, section rules: semantic HTML/CSS. Work previews: custom explanatory diagrams, explicitly described as such, instead of the mock's fictional travel app. Experience: ruled rows with known dates. Mobile stacks hero and simplifies project diagrams.
+Metal ribbon: generated raster asset. Typography, nav, CTAs, section rules: semantic HTML/CSS. Projects: Ethio-Budget and Enicharet, imported from the previous portfolio with their actual screenshots and links. Phone and browser compositions frame the screenshots. Experience: ruled rows with known dates. Mobile stacks the layout and adapts the screenshot compositions.

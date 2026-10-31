@@ -311,3 +311,11 @@
   @media(min-width:700px){.project-showcase{padding:28px 36px;gap:36px}.showcase-label{font-size:.6rem}.showcase-foot{font-size:.5rem}.phone-composition{padding:32px 0 44px;gap:32px}}
   @media(max-width:699px){.project-list{gap:56px}.phone-composition{gap:16px;min-height:360px}.phone-preview{flex-basis:56%;min-width:0;max-width:190px}.phone-1,.phone-2{position:absolute;width:40%;max-width:155px;opacity:.85}.phone-1{left:-22px}.phone-2{right:-22px}.phone-0{transform:none}.showcase-label,.showcase-foot{font-size:.45rem}.showcase-foot span:last-child{display:none}.project-showcase{padding:20px}.browser-bar{height:25px}.showcase-web{gap:24px}}
 }
+
+@layer components {
+  .reading-progress{position:fixed;inset:0 0 auto;height:2px;background:var(--accent);transform:scaleX(0);transform-origin:left;z-index:40;pointer-events:none}
+  .hero-art img{transform:translate3d(0,var(--parallax,0px),0)}
+}
+@layer responsive {
+  @media(prefers-reduced-motion:reduce){.reading-progress{display:none}.hero-art img{transform:none}}
+}

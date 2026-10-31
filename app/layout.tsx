@@ -1,7 +1,9 @@
 import type { Metadata, Viewport } from "next";
 import "@fontsource-variable/manrope";
+import "lenis/dist/lenis.css";
 import "./globals.css";
 import { site } from "@/lib/content";
+import { ScrollEffects } from "@/components/scroll-effects";
 
 export const metadata: Metadata = {
   title: site.metadata.title,
@@ -16,5 +18,5 @@ export const metadata: Metadata = {
 export const viewport: Viewport = { themeColor: "#1c1d1b" };
 
 export default function RootLayout({ children }: Readonly<{ children: React.ReactNode }>) {
-  return <html lang="en"><body>{children}</body></html>;
+  return <html lang="en"><body><ScrollEffects/>{children}</body></html>;
 }

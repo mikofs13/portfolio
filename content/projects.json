@@ -1,0 +1,72 @@
+[
+  {
+    "slug": "ethio-budget",
+    "title": "Ethio-Budget",
+    "status": "Mobile app",
+    "summary": "A personal finance app that turns bank SMS alerts and manual entries into clear transactions and expense summaries.",
+    "description": [
+      "Ethio-Budget makes everyday finances easier to understand by organizing bank SMS alerts and manually entered records into a familiar transaction ledger.",
+      "With the user's permission, the Android SMS import scans messages and filters locally for CBE and 127 sender IDs. Parsed records can be reviewed and saved, while manual entries cover transactions that are not captured through SMS.",
+      "The dashboard brings together balance, income, expenses, savings and spending trends in Ethiopian birr. The activity view lets users filter transactions by type and review or remove records.",
+      "I built the mobile app with Expo and React Native. The screenshots show the dashboard, transaction ledger and SMS import flow."
+    ],
+    "stack": [
+      "Expo",
+      "React Native"
+    ],
+    "preview": {
+      "src": "/images/projects/ethio-budget/dashboard.jpg",
+      "alt": "Ethio-Budget mobile dashboard with Ethiopian birr balance, income, expenses and savings summaries"
+    },
+    "screenshots": [
+      {
+        "src": "/images/projects/ethio-budget/transactions.jpg",
+        "alt": "Ethio-Budget transaction ledger with income, expense, transfer and savings filters"
+      },
+      {
+        "src": "/images/projects/ethio-budget/import.jpg",
+        "alt": "Ethio-Budget SMS import screen with permission request, CBE and 127 sender filtering, and parsed transactions"
+      }
+    ],
+    "links": {
+      "repo": "https://github.com/mikofs13/ethio-budget-app/tree/main"
+    },
+    "presentation": "mobile"
+  },
+  {
+    "slug": "enicharet",
+    "title": "Enicharet",
+    "status": "Test-money prototype",
+    "summary": "A lowest-unique-bid auction platform with phone OTP accounts, private bidding, a test-money wallet and automated winner settlement.",
+    "description": [
+      "Enicharet is a web-first bidding platform built around lowest-unique-bid auctions: at closing, the lowest amount submitted exactly once becomes the first eligible winning bid. Visitors can browse prizes, then sign in with a phone OTP to participate.",
+      "The platform includes administrator prize management, private bids and a test-money wallet with a transaction ledger. An accepted bid charges an entry fee; only the selected winner pays their bid amount within a payment deadline.",
+      "Background settlement handles auction closing, winner offers, payment deadlines, reassignment and entry-fee refunds when no eligible winner remains. Notifications and an administrator operations view support delivery status, worker health and audited retries.",
+      "I built the application with Next.js, React and TypeScript, using PostgreSQL, Prisma and Better Auth. The current implementation uses TEST funds; real payments and physical prize handover are not enabled."
+    ],
+    "stack": [
+      "Next.js",
+      "React",
+      "TypeScript",
+      "PostgreSQL",
+      "Prisma",
+      "Better Auth",
+      "Tailwind CSS"
+    ],
+    "preview": {
+      "src": "/images/projects/enicharet/collection.png",
+      "alt": "Enicharet prize collection homepage explaining test-fund bidding and displaying available prizes"
+    },
+    "screenshots": [
+      {
+        "src": "/images/projects/enicharet/operations.png",
+        "alt": "Enicharet test-money auction operations dashboard with settlement jobs, winner payment windows and notification status"
+      }
+    ],
+    "links": {
+      "repo": "https://github.com/mikofs13/enicharet",
+      "live": "https://enicharet.vercel.app"
+    },
+    "presentation": "web"
+  }
+]

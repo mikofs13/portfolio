@@ -1,13 +1,14 @@
 import type { Metadata, Viewport } from "next";
 import "@fontsource-variable/manrope";
 import "./globals.css";
+import { site } from "@/lib/content";
 
 export const metadata: Metadata = {
-  title: "Michael Feleke Sahle | Software Engineering",
-  description: "Software engineering student at Addis Ababa University. Building thoughtful web applications and exploring machine learning and computer vision.",
+  title: site.metadata.title,
+  description: site.metadata.description,
   openGraph: {
-    title: "Michael Feleke Sahle | Software Engineering",
-    description: "Thoughtful code. Real-world impact. Selected work in web development and applied AI.",
+    title: site.metadata.title,
+    description: site.metadata.description,
     type: "website",
   },
 };

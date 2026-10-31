@@ -1,0 +1,59 @@
+{
+  "name": "Michael Feleke Sahle",
+  "brand": "michael",
+  "discipline": "SOFTWARE ENGINEERING",
+  "email": "michaelfeleke13@gmail.com",
+  "github": "https://github.com/mikofs13",
+  "metadata": {
+    "title": "Michael Feleke Sahle | Software Engineering",
+    "description": "Software engineering student at Addis Ababa University. Building thoughtful web applications and exploring machine learning and computer vision."
+  },
+  "hero": {
+    "eyebrow": "SOFTWARE ENGINEERING & APPLIED AI",
+    "headline": ["Thoughtful", "code."],
+    "accentHeadline": ["Real-world", "impact."],
+    "intro": "I’m Michael Feleke Sahle. A software engineering student building for the web and exploring what machines can see.",
+    "artCaption": "CURIOSITY, SHAPED INTO SOMETHING USEFUL.",
+    "location": "BASED IN ADDIS ABABA, ETHIOPIA",
+    "education": "AAU · SOFTWARE ENGINEERING · CLASS OF 2030"
+  },
+  "work": {
+    "heading": ["A few things", "I’ve been building"],
+    "description": "From practical web applications to computer vision. Learning by solving real problems."
+  },
+  "about": {
+    "heading": ["Curiosity is", "the starting point"],
+    "lead": "I like understanding how things work. Then figuring out how to make them work better.",
+    "paragraphs": [
+      "I’m Michael, a Software Engineering student at Addis Ababa University, working toward my bachelor’s degree in 2030. My interests span full-stack development, machine learning, and computer vision.",
+      "At Addis Tech Group, I’m gaining practical experience building and improving web applications. Alongside that, I explore projects that connect software to everyday problems."
+    ]
+  },
+  "experience": [
+    {
+      "type": "EXPERIENCE",
+      "role": "Software Engineering Intern",
+      "organization": "Addis Tech Group",
+      "description": "Building and improving responsive web applications with Next.js, React, TypeScript, and Tailwind CSS, with a focus on performance and maintainability.",
+      "date": "June 2026 — Present"
+    },
+    {
+      "type": "EDUCATION",
+      "role": "Bachelor’s in Software Engineering",
+      "organization": "Addis Ababa University",
+      "description": "Developing a foundation in software engineering while exploring practical applications in web development, machine learning, and computer vision.",
+      "date": "Expected 2030"
+    }
+  ],
+  "skills": [
+    { "title": "Languages", "items": ["Python", "TypeScript", "JavaScript", "C++"] },
+    { "title": "Web & backend", "items": ["React", "Next.js", "Node.js", "FastAPI", "REST APIs"] },
+    { "title": "Data & intelligence", "items": ["PostgreSQL", "Supabase", "TensorFlow", "OpenCV"] },
+    { "title": "Tools & hardware", "items": ["Git & GitHub", "Docker", "ESP32", "Arduino"] }
+  ],
+  "contact": {
+    "heading": ["Let’s build", "something good."],
+    "description": "Ideas, collaborations, or a simple hello. I’d love to hear from you."
+  },
+  "footerNote": "BUILT WITH CURIOSITY. ADDIS ABABA, ET."
+}

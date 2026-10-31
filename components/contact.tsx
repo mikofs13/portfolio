@@ -3,11 +3,11 @@
 import { useState } from "react";
 import { Arrow } from "./icons";
 
-export function CopyEmail() {
+export function CopyEmail({ email }: { email: string }) {
   const [message, setMessage] = useState("");
   const copy = async () => {
     try {
-      await navigator.clipboard.writeText("michaelfeleke13@gmail.com");
+      await navigator.clipboard.writeText(email);
       setMessage("Email copied.");
     } catch { setMessage("Select the email above to copy it."); }
   };

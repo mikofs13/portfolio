@@ -10,19 +10,19 @@
   },
   "hero": {
     "eyebrow": "SOFTWARE ENGINEERING & APPLIED AI",
-    "headline": ["Thoughtful", "code."],
-    "accentHeadline": ["Real-world", "impact."],
+    "headline": ["Thoughtful"],
+    "accentHeadline": ["software."],
     "intro": "I’m Michael Feleke Sahle. A software engineering student building for the web and exploring what machines can see.",
     "artCaption": "CURIOSITY, SHAPED INTO SOMETHING USEFUL.",
     "location": "BASED IN ADDIS ABABA, ETHIOPIA",
     "education": "AAU · SOFTWARE ENGINEERING · CLASS OF 2030"
   },
   "work": {
-    "heading": ["A few things", "I’ve been building"],
+    "heading": ["Selected work"],
     "description": "From practical web applications to computer vision. Learning by solving real problems."
   },
   "about": {
-    "heading": ["Curiosity is", "the starting point"],
+    "heading": ["Curiosity, then", "understanding"],
     "lead": "I like understanding how things work. Then figuring out how to make them work better.",
     "paragraphs": [
       "I’m Michael, a Software Engineering student at Addis Ababa University, working toward my bachelor’s degree in 2030. My interests span full-stack development, machine learning, and computer vision.",

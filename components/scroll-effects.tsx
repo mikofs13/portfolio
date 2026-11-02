@@ -23,18 +23,18 @@ export function ScrollEffects() {
       }) : null;
       const animations = new Set<Animation>();
       const observer = new IntersectionObserver(entries => {
-        for (const entry of entries) {
-          if (!entry.isIntersecting) continue;
+        const visible = entries.filter(entry => entry.isIntersecting).sort((a, b) => a.boundingClientRect.top - b.boundingClientRect.top);
+        for (const [index, entry] of visible.entries()) {
           const animation = entry.target.animate([
-            { opacity: 0, transform: "translate3d(0, 28px, 0)" },
+            { opacity: 0, transform: "translate3d(0, 20px, 0)" },
             { opacity: 1, transform: "translate3d(0, 0, 0)" },
-          ], { duration: 850, easing: "cubic-bezier(.22,1,.36,1)", fill: "none" });
+          ], { duration: 720, delay: Math.min(index * 65, 195), easing: "cubic-bezier(.16,1,.3,1)", fill: "none" });
           animations.add(animation);
           void animation.finished.then(() => animations.delete(animation)).catch(() => {});
           observer.unobserve(entry.target);
         }
       }, { threshold: 0.1, rootMargin: "0px 0px -24px 0px" });
-      document.querySelectorAll(".section-heading, .project-showcase, .project-copy, .about-copy, .experience-row, .tool-row, .contact-bottom").forEach(element => observer.observe(element));
+      document.querySelectorAll(".section-heading h2, .section-description, .project-showcase, .project-copy, .project-notes, .about-title h2, .about-copy > *, .experience-row, .tool-row, .contact-title, .form-intro, .form-field, .form-actions, .contact-bottom").forEach(element => observer.observe(element));
 
       const art = document.querySelector<HTMLElement>(".hero-art img");
       let frame = 0;

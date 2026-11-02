@@ -3,7 +3,6 @@ import { Fragment } from "react";
 import { Header } from "@/components/header";
 import { Arrow } from "@/components/icons";
 import { ContactForm } from "@/components/contact-form";
-import { CopyEmail } from "@/components/contact";
 import { Project } from "@/components/project";
 
 
@@ -41,7 +40,7 @@ export default function Home() {
 
       <section className="tools-section shell section-space" aria-labelledby="tools-heading"><div className="section-heading"><div><h2 id="tools-heading">Tools I work with<span className="accent">.</span></h2></div><p className="section-description">Different tools. One goal:<br/>build something useful.</p></div>{site.skills.map(group => <div className="tool-row" key={group.title}><h3>{group.title}</h3><ul>{group.items.map(item => <li key={item}>{item}</li>)}</ul></div>)}</section>
 
-      <section id="contact" className="contact-section" aria-labelledby="contact-heading"><div className="shell"><a className="contact-title" href={`mailto:${site.email}`}><h2 id="contact-heading"><Lines lines={site.contact.heading}/></h2><Arrow/></a><ContactForm/><div className="contact-bottom"><div><a className="email-link" href={`mailto:${site.email}`}>{site.email}</a><CopyEmail email={site.email}/></div><p>{site.contact.description}</p></div></div></section>
+      <section id="contact" className="contact-section" aria-labelledby="contact-heading"><div className="shell"><a className="contact-title" href={`mailto:${site.email}`}><h2 id="contact-heading"><Lines lines={site.contact.heading}/></h2><Arrow/></a><ContactForm/><div className="contact-bottom"><a className="email-link" href={`mailto:${site.email}`}>{site.email}</a></div></div></section>
     </main>
     <footer className="footer shell"><p>© {new Date().getFullYear()} {site.name}</p><p className="footer-note">{site.footerNote}</p><a href={site.github} target="_blank" rel="noopener noreferrer">GitHub <Arrow/></a><a href="#home">Back to top <span aria-hidden="true">↑</span></a></footer>
   </>;

@@ -16,18 +16,22 @@ export function ScrollEffects() {
       if (preference.matches) return;
       const lenis = finePointer.matches ? new Lenis({
         autoRaf: true,
-        duration: 1.05,
+        lerp: 0.14,
         smoothWheel: true,
         syncTouch: false,
-        anchors: { offset: -32 },
+        stopInertiaOnNavigate: true,
+        anchors: { offset: -32, duration: 0.55 },
       }) : null;
       const animations = new Set<Animation>();
       const observer = new IntersectionObserver(entries => {
         const visible = entries.filter(entry => entry.isIntersecting).sort((a, b) => a.boundingClientRect.top - b.boundingClientRect.top);
         for (const [index, entry] of visible.entries()) {
+          const isImage = entry.target.matches(".project-showcase");
           const animation = entry.target.animate([
-            { opacity: 0, transform: "translate3d(0, 20px, 0)" },
-            { opacity: 1, transform: "translate3d(0, 0, 0)" },
+            isImage
+              ? { opacity: 0, transform: "scale(.985)" }
+              : { opacity: 0, transform: "translate3d(0, 20px, 0)" },
+            { opacity: 1, transform: "none" },
           ], { duration: 720, delay: Math.min(index * 65, 195), easing: "cubic-bezier(.16,1,.3,1)", fill: "none" });
           animations.add(animation);
           void animation.finished.then(() => animations.delete(animation)).catch(() => {});
@@ -42,7 +46,7 @@ export function ScrollEffects() {
         frame = 0;
         const range = document.documentElement.scrollHeight - window.innerHeight;
         if (progress.current) progress.current.style.transform = `scaleX(${range > 0 ? Math.min(1, Math.max(0, window.scrollY / range)) : 0})`;
-        if (art && finePointer.matches) art.style.setProperty("--parallax", `${Math.min(48, window.scrollY * 0.065)}px`);
+        if (art && finePointer.matches) art.style.setProperty("--parallax", `${Math.min(32, window.scrollY * 0.045)}px`);
       };
       const schedule = () => { if (!frame) frame = requestAnimationFrame(update); };
       window.addEventListener("scroll", schedule, { passive: true });

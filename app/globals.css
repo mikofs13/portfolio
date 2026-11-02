@@ -173,8 +173,6 @@
   .form-feedback:focus { outline: none; }
   .form-feedback.error { color: #72291e; }
   .form-feedback.success { font-weight: 600; }
-  .contact-bottom { padding-top: 24px; }
-  .email-link { font-size: clamp(1rem, 2vw, 1.3rem); letter-spacing: -.03em; font-weight: 600; overflow-wrap: anywhere; }
   .contact-section :focus-visible { outline-color: var(--accent-ink); }
   .footer { display: flex; flex-wrap: wrap; justify-content: space-between; align-items: center; gap: 8px 24px; padding-block: 24px; color: var(--muted); font-size: .85rem; }
   .footer-note { order: 4; width: 100%; font-size: .8rem; }

@@ -40,7 +40,7 @@ export function ContactForm() {
   }
 
   return <form className="contact-form" onSubmit={submit} aria-label="Send an inquiry" aria-busy={state === "sending"}>
-    <div className="form-intro"><h3>Tell me what you have in mind.</h3><p>A project, an opportunity, or a conversation.</p></div>
+    <div className="form-intro"><h3>Send an inquiry.</h3><p>Use this form for work, project, or collaboration inquiries.</p></div>
     <div className="form-fields"><div className="form-field"><label htmlFor="contact-name">Your name</label><input id="contact-name" name="name" autoComplete="name" placeholder="How should I call you?" required minLength={2} maxLength={100} aria-invalid={!!errors.name} aria-describedby={errors.name ? "name-error" : undefined}/>{errors.name && <p id="name-error" className="field-error">{errors.name}</p>}</div>
     <div className="form-field"><label htmlFor="contact-email">Email address</label><input id="contact-email" name="email" type="email" autoComplete="email" placeholder="you@example.com" required maxLength={254} aria-invalid={!!errors.email} aria-describedby={errors.email ? "email-error" : undefined}/>{errors.email && <p id="email-error" className="field-error">{errors.email}</p>}</div>
     <div className="form-field full-width"><label htmlFor="contact-inquiry">What brings you here?</label><select id="contact-inquiry" name="inquiry" required defaultValue="" aria-invalid={!!errors.inquiry} aria-describedby={errors.inquiry ? "inquiry-error" : undefined}><option value="" disabled>Select an inquiry type</option><option>Work with me</option><option>Project inquiry</option><option>Collaboration</option><option>Say hello</option></select>{errors.inquiry && <p id="inquiry-error" className="field-error">{errors.inquiry}</p>}</div>

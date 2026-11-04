@@ -6,27 +6,27 @@
   "github": "https://github.com/mikofs13",
   "metadata": {
     "title": "Michael Feleke Sahle | Software Engineer",
-    "description": "Software engineering student at Addis Ababa University. Building thoughtful web applications and exploring machine learning and computer vision."
+    "description": "Software engineering student at Addis Ababa University, developing web applications and studying machine learning and computer vision."
   },
   "hero": {
     "eyebrow": "SOFTWARE ENGINEER & APPLIED AI",
     "headline": ["Welcome to"],
     "accentHeadline": ["my portfolio."],
-    "intro": "I’m Michael Feleke Sahle. A software engineering student building for the web and exploring what machines can see.",
-    "artCaption": "CURIOSITY, SHAPED INTO SOMETHING USEFUL.",
+    "intro": "I’m Michael Feleke Sahle, a software engineering student at Addis Ababa University. I develop web applications and study machine learning and computer vision.",
+    "artCaption": "SOFTWARE ENGINEER",
     "location": "ADDIS ABABA, ETHIOPIA",
     "education": "AAU · SOFTWARE ENGINEERING · CLASS OF 2030"
   },
   "work": {
     "heading": ["Selected work"],
-    "description": "From practical web applications to computer vision. Learning by solving real problems."
+    "description": "Web applications and computer vision projects I have worked on."
   },
   "about": {
-    "heading": ["Curiosity, then", "understanding"],
-    "lead": "I like understanding how things work. Then figuring out how to make them work better.",
+    "heading": ["About me"],
+    "lead": "I’m studying Software Engineering at Addis Ababa University.",
     "paragraphs": [
-      "I’m Michael, a Software Engineering student at Addis Ababa University, working toward my bachelor’s degree in 2030. My interests span full-stack development, machine learning, and computer vision.",
-      "At Addis Tech Group, I’m gaining practical experience building and improving web applications. Alongside that, I explore projects that connect software to everyday problems."
+      "I’m working toward my bachelor’s degree, expected in 2030. My interests include full-stack development, machine learning, and computer vision.",
+      "At Addis Tech Group, I work on responsive web applications using Next.js, React, TypeScript, and Tailwind CSS."
     ]
   },
   "experience": [
@@ -52,8 +52,8 @@
     { "title": "Tools & hardware", "items": ["Git & GitHub", "Docker", "ESP32", "Arduino"] }
   ],
   "contact": {
-    "heading": ["Let’s build", "something good."],
-    "description": "Ideas, collaborations, or a simple hello. I’d love to hear from you."
+    "heading": ["Contact me"],
+    "description": "For work, project, and collaboration inquiries, send me a message."
   },
-  "footerNote": "BUILT WITH CURIOSITY. ADDIS ABABA, ET."
+  "footerNote": "ADDIS ABABA, ETHIOPIA"
 }

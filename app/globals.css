@@ -74,8 +74,8 @@
   .inline-link:active:not(:focus-visible) { transform: scale(.985); }
   .inline-link.primary { min-height: 52px; padding: 12px 20px; background: var(--accent); color: var(--accent-ink); }
   .inline-link.primary { transition: color .18s ease, background-color .18s ease, transform 140ms cubic-bezier(.23, 1, .32, 1); }
-  .hero-art { position: relative; display: grid; place-items: center; min-width: 0; max-height: 300px; overflow: hidden; margin-top: 18px; pointer-events: none; mix-blend-mode: lighten; }
-  .hero-art img { display: block; width: 86%; max-width: 420px; height: auto; margin-block: -20px; mix-blend-mode: lighten; }
+  .hero-art { position: relative; display: grid; place-items: end center; min-width: 0; min-height: clamp(350px, 108vw, 470px); overflow: visible; margin-top: 18px; pointer-events: none; }
+  .hero-art img { display: block; width: auto; max-width: 100%; height: clamp(350px, 108vw, 470px); margin: 0; object-fit: contain; object-position: bottom center; }
   .art-caption { display: none; }
   .hero-foot { grid-column: 1 / -1; display: flex; justify-content: space-between; align-items: center; gap: 14px; margin-top: 10px; padding: 18px 0; color: var(--muted); font-size: .85rem; }
   .hero-foot a { display: flex; align-items: center; gap: 10px; min-height: 40px; color: var(--ink); }
@@ -205,8 +205,8 @@
     .nav { display: flex; width: auto; gap: 28px; padding: 0; }
     .hero { grid-template-columns: minmax(0, 1.05fr) minmax(0, 1fr); padding-top: 42px; }
     .hero h1 { font-size: clamp(4.4rem, 7.2vw, 7rem); }
-    .hero-art { max-height: none; overflow: visible; margin: 0; align-self: stretch; }
-    .hero-art img { position: absolute; top: 0; right: -20px; width: 130%; max-width: none; height: 100%; object-fit: contain; }
+    .hero-art { min-height: clamp(460px, 52vw, 620px); max-height: none; overflow: visible; margin: 0; align-self: stretch; }
+    .hero-art img { position: absolute; inset: auto 0 0; width: 100%; max-width: 100%; height: 100%; object-fit: contain; object-position: bottom center; }
     .hero-foot { margin-top: 30px; padding-block: 20px; font-size: .9rem; }
     .hero-education { display: block; }
     .section-heading { flex-direction: row; align-items: end; gap: 48px; margin-bottom: 60px; }
@@ -236,7 +236,6 @@
     .nav { gap: 36px; }
     .hero { padding-top: 50px; grid-template-columns: minmax(0, 1.05fr) minmax(0, 1fr); }
     .hero h1 { font-size: clamp(5.5rem, 7vw, 8.5rem); }
-    .hero-art img { top: -12px; right: -30px; width: 125%; height: calc(100% + 32px); }
     .art-caption { position: absolute; right: -16px; bottom: 28px; display: block; color: var(--muted); font-size: .8rem; writing-mode: vertical-rl; }
     .hero-foot { margin-top: 38px; }
     .project-info { gap: 80px; }

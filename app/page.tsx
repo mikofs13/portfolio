@@ -3,7 +3,7 @@ import { Fragment } from "react";
 import { Header } from "@/components/header";
 import { Arrow } from "@/components/icons";
 import { ContactForm } from "@/components/contact-form";
-import { Project } from "@/components/project";
+import { ProjectShowcase } from "@/components/project-showcase";
 
 
 import { site, projects } from "@/lib/content";
@@ -30,7 +30,7 @@ export default function Home() {
 
       {projects.length > 0 && <section id="work" className="work-section shell section-space" aria-labelledby="work-heading">
         <div className="section-heading"><div><h2 id="work-heading"><Lines lines={site.work.heading}/><span className="accent">.</span></h2></div><p className="section-description">{site.work.description}</p></div>
-        <div className="project-list">{projects.map((project, index) => <Project project={project} index={index} key={project.slug}/>)}</div>
+        <ProjectShowcase projects={projects}/>
         <a className="inline-link more-work" href={site.github} target="_blank" rel="noopener noreferrer">More from my workbench <Arrow/></a>
       </section>}
 

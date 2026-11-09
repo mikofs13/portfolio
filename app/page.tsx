@@ -24,7 +24,7 @@ export default function Home() {
           <p className="hero-intro">{site.hero.intro}</p>
           <div className="hero-actions"><a className="inline-link primary" href={projects.length ? "#work" : "#about"}>Explore my work <Arrow/></a><a className="inline-link" href="#contact">Get in touch <Arrow/></a></div>
         </div>
-        <div className="hero-art"><Image src="/images/michael-portrait.png" alt="Portrait of Michael Feleke Sahle" width={413} height={531} loading="eager" fetchPriority="high" sizes="(max-width: 699px) 100vw, 50vw"/><span className="art-caption">{site.hero.artCaption}</span></div>
+        <div className="hero-art" aria-hidden="true"><Image src="/studio-ribbon.webp" alt="" width={1100} height={1375} loading="eager" fetchPriority="high" sizes="(max-width: 699px) 85vw, 55vw"/><span className="art-caption">{site.hero.artCaption}</span></div>
         <div className="hero-foot"><p>{site.hero.location}</p><p className="hero-education">{site.hero.education}</p><a href={projects.length ? "#work" : "#about"}>Explore below <span aria-hidden="true">↓</span></a></div>
       </section>
 
